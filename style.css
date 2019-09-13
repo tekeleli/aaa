@@ -1,0 +1,147 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  width: 100%;
+  padding: 0px;
+}
+
+.menu {
+  display: table;
+  background-color:rgb(0, 53, 176);
+  width: 100%;
+  color: white;
+  height: 80px;
+}
+
+.logo {
+  font-family:Roboto, Arial, sans-serif;
+  font-size:24px;
+  font-weight:400;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 40px;
+}
+
+.menu ul {
+  display: table-cell;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.menu li {
+  color: white;
+  float: right;
+  font-family:Roboto, Arial, sans-serif;
+  font-size:16px;
+  font-weight:600;
+  margin-right: 40px;
+  margin-left: 0px;
+}
+
+.burger {
+  padding-top: 6px;
+  vertical-align: middle;
+  display: none;
+  margin-right: -20px;
+}
+
+.burger span {
+  display: block;
+  margin-bottom: 6px;
+  margin-right: 0px;
+  height: 3px;
+  width: 28px;
+  background-color: white;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 980px) {
+  li a {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .burger {
+    display: table-cell;
+  }
+  .menu {
+  height: 64px;
+  background-color: black;
+}
+}
+
+@media screen and (max-width: 640px) {
+    .menu {
+  height: 60px;
+}
+  }
+
+@media screen and (max-width: 1200px) {
+.menu li {
+margin-right: 20px;
+  margin-left: 20px;
+}
+.logo {
+  padding-left: 20px;
+}
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.video-card {
+  display: block;
+  position:relative;
+}
+
+.video-bg {
+  display: block;
+  
+}
+
+.card {
+  display: block;
+  background-image: -webkit-linear-gradient(top, rgba(0,70,209,0.70), rgba(152,0,186,0.70));
+  height: 1058px;
+  color: white;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto',Arial,sans-serif;
+  font-weight: 600;
+  font-size: 68px;
+  margin: 0px;
+  padding-bottom: 20px;
+  padding-top: 160px;
+}
+h3 {
+  text-align: center;
+  font-size:22px;
+  font-weight:400;
+  margin: 0px;
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  }
+
